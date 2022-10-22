@@ -1,4 +1,5 @@
 import "./ExpenseItem.css"
+import Date from "./Date";
 
 function ExpenseItem(props) {
 
@@ -11,13 +12,13 @@ function ExpenseItem(props) {
     return (
         <div className="expense-item">
             <div>
-                <div>{month}</div>
-                <div>{year}</div>
-                <div>{day}</div>
+                <Date month={month} day={day} year={year} />
             </div>
+
             <div className="expense-item__description">
                 <h2>{props.title}</h2>
             </div>
+            
             <div className="expense-item__price">
                 ${props.amount}
             </div>
