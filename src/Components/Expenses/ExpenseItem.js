@@ -10,6 +10,7 @@ function ExpenseItem(props) {
         setTitle(initialTitle +' Updated versions')
     }
 
+
     return (
         <Card className="expense-item">
             <div>
