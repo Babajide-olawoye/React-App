@@ -23,9 +23,13 @@ function App() {
     },
   ];
 
+  function recieveExpData(expData){
+    console.log(expData)
+  }
+
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onRecieveExpenseData={recieveExpData}/>
       <Expense arrOfExpenses = {expenses}/>
     </div>
   );
